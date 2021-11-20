@@ -33,7 +33,7 @@ mybatis-plus:
   # 配置 Mapper 映射文件
   mapper-locations: classpath*:/mapper/*Mapper.xml
   # 配置 Mybatis 数据返回的类型别名（默认别名是类名）
-  type-aliases-package: com.wei.server.pojo
+  type-aliases-package: com.wei.server.dao
   configuration:
     # 自动驼峰命名
     map-underscore-to-camel-case: false
@@ -42,3 +42,10 @@ mybatis-plus:
 logging:
   level:
     com.wei.server.mapper: debug
+
+knife4j:
+  enable: true # 开启访问
+  setting:
+    enableFooter: false # 禁用默认的Footer显示
+    enableFooterCustom: true # 开启自定义 Footer
+    footerCustomContent: ChenZhen API
