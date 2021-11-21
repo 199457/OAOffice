@@ -25,7 +25,7 @@ public class UserDetailServiceImpl implements UserDetailsService {
         return new User(
                 "admin",
                 pe.encode("123456"),
-                AuthorityUtils.commaSeparatedStringToAuthorityList("admin")
+                AuthorityUtils.commaSeparatedStringToAuthorityList("admin, ROLE_admin")
         );
     }
 
